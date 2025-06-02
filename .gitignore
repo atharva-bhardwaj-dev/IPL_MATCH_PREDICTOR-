@@ -1,0 +1,10 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+.env
+*.h5
+*.hdf5
+.DS_Store
