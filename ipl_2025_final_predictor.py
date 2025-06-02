@@ -533,7 +533,7 @@ def demo_prediction():
     predictor = CorrectedIPLNeuralPredictor(data_path='IPL-Player-Stat.csv')
     
     # Example teams with top performers
-    rcb_example = [
+    team1_example = [
     'F du Plessis',
     'V Kohli',
     'GJ Maxwell',
@@ -559,7 +559,7 @@ def demo_prediction():
     'AB de Villiers',  # previously
 ]
     
-    pbks_example = [
+    team2_example = [
     'S Dhawan',
     'Jitesh Sharma',  # not found
     'Shahrukh Khan',  # as 'M Shahrukh Khan'
@@ -585,8 +585,8 @@ def demo_prediction():
 ]
 
     print("Demo Teams:")
-    print(f"Team 1: {team1_example}")
-    print(f"Team 2: {team2_example}\n")
+    print(f"RCB: {team1_example}")
+    print(f"PBKS: {team2_example}\n")
     
     result = predictor.predict_match_winner(team1_example, team2_example)
     
